@@ -1,95 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-
-    <link rel="icon" href="devchallenges.png" />
-
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Weather App</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <div class="container">
+      <div class="left">
+        <div class="row">
+          <img src="./assets/img/Shower.png" alt="Cloud Image" />
+        </div>
+        <div class="row">15C</div>
+        <div class="row">Shower</div>
+        <div class="row">Today - Fri 5 Jun</div>
+        <div class="row">Helsinki</div>
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      <div class="right">
+        <div class="temperature-icons">
+          <span>C</span>
+          <span>F</span>
+        </div>
+        <div class="weather-cards">
+          <div class="card">Tomorrow</div>
+          <div class="card">Sun 7 Jun</div>
+          <div class="card">Monday 8 Jun</div>
+          <div class="card">Tuesday 9 Jun</div>
+          <div class="card">Wednesday 10 Jun</div>
+        </div>
+        <div class="highlights">
+          <h2>Today's Highlights</h2>
+          <div class="highlight-row">
+            <div class="highlight-card">
+              <div class="highlight-title">Wind Status</div>
+              <div class="highlight-value">7 mph</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-title">Humidity</div>
+              <div class="highlight-value">84%</div>
+            </div>
+          </div>
+          <div class="highlight-row">
+            <div class="highlight-card">
+              <div class="highlight-title">Visibility</div>
+              <div class="highlight-value">6.4 miles</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-title">Air Pressure</div>
+              <div class="highlight-value">998 mb</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
