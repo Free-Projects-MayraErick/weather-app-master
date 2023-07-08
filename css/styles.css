@@ -2,6 +2,14 @@
     display: flex;
     color: #E7E7EB;
   }
+
+  .row {
+    margin-bottom: 10px;
+    font-family: 'Raleway';
+    text-align: center;
+  }
+
+  /*--------------Left Side-----------------*/
   
   .left {
     flex-basis: 33.33%;
@@ -9,16 +17,31 @@
     background-color: #1E213A;
     
   }
+
+  .left-row-main{
+    font-weight: 300;
+    font-size: 144px;
+  }
+
+  #principal-temperature-sign{
+    font-weight: 100;
+    font-size: 48px;
+    font-family: 'Raleway';
+    color:#A09FB1;
+  }
+
+  .left-row-type{
+    font-weight: 600;
+    font-size: 36px;
+    color:#A09FB1;
+  }
   
+   /*--------------Rigth Side-----------------*/
   .right {
     flex-basis: 66.67%;
     padding: 20px;
     background-color:#100E1D;
     ;
-  }
-  
-  .row {
-    margin-bottom: 10px;
   }
   
   .temperature-icons {

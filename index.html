@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css" /> 
     <title>Weather App</title>
@@ -13,8 +15,11 @@
         <div class="row">
           <img src="./assets/img/Shower.png" alt="Cloud Image" />
         </div>
-        <div class="row">15C</div>
-        <div class="row">Shower</div>
+        <div>
+          <div class="row left-row-main" id="principal-temperature">15</div>
+          <div class="row left-row-main" id="principal-temperature-sign">&deg;C</div>
+        </div>
+        <div class="row left-row-type" id="principal-type">Shower</div>
         <div class="row">Today - Fri 5 Jun</div>
         <div class="row">Helsinki</div>
       </div>
