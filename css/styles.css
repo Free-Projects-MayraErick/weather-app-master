@@ -2,7 +2,8 @@
     display: flex;
     color: #E7E7EB;
   }
-  /*--------------Left Side-----------------*/
+  
+  /*--------------Left Side Begin-----------------*/
 
   .left {
     flex-basis: 33.33%;
@@ -54,9 +55,9 @@
     color:#A09FB1;
   }
 
-/*--------------End Left Side-----------------*/
+/*--------------Left Side End-----------------*/
   
-   /*--------------Rigth Side-----------------*/
+/*--------------Rigth Side Begin-----------------*/
   .right {
     flex-basis: 66.67%;
     padding: 20px;
