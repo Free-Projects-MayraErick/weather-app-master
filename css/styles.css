@@ -2,15 +2,8 @@
     display: flex;
     color: #E7E7EB;
   }
-
-  .row {
-    margin-bottom: 10px;
-    font-family: 'Raleway';
-    text-align: center;
-  }
-
   /*--------------Left Side-----------------*/
-  
+
   .left {
     flex-basis: 33.33%;
     padding: 20px;
@@ -18,16 +11,42 @@
     
   }
 
-  .left-row-main{
-    font-weight: 300;
-    font-size: 144px;
+  /*--------------Picture------------*/
+  .row {
+    margin-bottom: 10px;
+  }
+ /*--------------Font and align------------*/
+  .row-content {
+    font-family: 'Raleway';
+    text-align: center;
   }
 
-  #principal-temperature-sign{
+  .box-row{
+    display : flex;
+    background-color: aqua;
+  }
+
+  .left-row-main{
+    margin-bottom: 0%;
+    background:green;
+    font-weight: 300;
+    font-size: 144px;
+    text-align: justify;
+  }
+
+  .left-row-sign{
+    margin-bottom: 0%;
+    background:red;
+    flex-basis: 33.33%;
     font-weight: 100;
     font-size: 48px;
     font-family: 'Raleway';
+    text-align: justify;
     color:#A09FB1;
+  }
+
+  .left-row{
+    color:#88869D;
   }
 
   .left-row-type{
@@ -35,6 +54,8 @@
     font-size: 36px;
     color:#A09FB1;
   }
+
+/*--------------End Left Side-----------------*/
   
    /*--------------Rigth Side-----------------*/
   .right {
