@@ -8,7 +8,6 @@
     flex-basis: 33.33%;
     padding: 20px;
     background-color: #1E213A;
-    
   }
 
   /*--------------Picture------------*/
@@ -21,30 +20,30 @@
     text-align: center;
   }
 
+  /*--------------Temperature and celsius sign------------*/
   .box-row{
     display : flex;
+    flex-direction: row;
+    padding: 10px;
     background-color: aqua;
   }
 
-  .left-row-main{
-    margin-bottom: 0%;
+  .left-row-temperature{
     background:green;
+    flex-basis: 70%;
     font-weight: 300;
     font-size: 144px;
-    text-align: justify;
   }
 
   .left-row-sign{
-    margin-bottom: 0%;
     background:red;
-    flex-basis: 33.33%;
+    flex-basis: 30%;
     font-weight: 100;
     font-size: 48px;
-    font-family: 'Raleway';
-    text-align: justify;
+    vertical-align: text-bottom;
     color:#A09FB1;
   }
-
+  /*--------------Type of weather, date and Ubication------------*/
   .left-row{
     color:#88869D;
   }
