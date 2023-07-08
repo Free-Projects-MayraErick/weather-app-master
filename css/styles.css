@@ -1,11 +1,13 @@
 .container {
     display: flex;
+    color: #E7E7EB;
   }
   
   .left {
     flex-basis: 33.33%;
     padding: 20px;
     background-color: #1E213A;
+    
   }
   
   .right {
