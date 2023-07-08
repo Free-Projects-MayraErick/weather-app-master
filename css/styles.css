@@ -5,11 +5,14 @@
   .left {
     flex-basis: 33.33%;
     padding: 20px;
+    background-color: #1E213A;
   }
   
   .right {
     flex-basis: 66.67%;
     padding: 20px;
+    background-color:#100E1D;
+    ;
   }
   
   .row {
