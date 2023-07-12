@@ -16,8 +16,15 @@ const weatherAPI = async () => {
 
 
 function showRelevantData(data){
-    const tempLocale = data.main.temp - 273.15;
+    const tempLocale = getTemperature(data);
+    document.getElementById("principal-temperature").innerHTML = tempLocale.toFixed(2);
     console.log(tempLocale.toFixed(2));
+}
+
+function getTemperature(data){
+
+    const tempLocale = data.main.temp - 273.15;
+    return tempLocale;
 }
 
 
