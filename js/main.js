@@ -4,12 +4,21 @@ const weatherAPI = async () => {
     try{
         const respuesta = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Mérida&appid=${APIKEY}`);
         console.log(respuesta); 
-        const data = respuesta.json(); //Esto permite recuperar la información devuelta por el json
+        const data = await respuesta.json(); //Esto permite recuperar la información devuelta por el json
         console.log(data);
+        showRelevantData(data);
     }catch(error){
         console.log(error);
     }
 
   }
   
-  weatherAPI();
+
+
+function showRelevantData(data){
+    const tempLocale = data.main.temp - 273.15;
+    console.log(tempLocale.toFixed(2));
+}
+
+
+weatherAPI();
