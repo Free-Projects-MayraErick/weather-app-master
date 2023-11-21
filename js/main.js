@@ -12,13 +12,19 @@ const weatherAPI = async () => {
     }
 
   }
-  
-
 
 function showRelevantData(data){
     const tempLocale = getTemperature(data);
     document.getElementById("principal-temperature").innerHTML = tempLocale.toFixed(2);
     console.log(tempLocale.toFixed(2));
+
+    const tempLocaleMin = getTemperatureMin(data);
+    document.getElementById("temperature-min").innerHTML = tempLocaleMin.toFixed(2);
+    console.log(tempLocaleMin.toFixed(2));
+
+    const tempLocaleMax = getTemperatureMax(data);
+    document.getElementById("temperature-max").innerHTML = tempLocaleMax.toFixed(2);
+    console.log(tempLocaleMax.toFixed(2));
 }
 
 function getTemperature(data){
@@ -26,6 +32,19 @@ function getTemperature(data){
     const tempLocale = data.main.temp - 273.15;
     return tempLocale;
 }
+
+function getTemperatureMin(data){
+
+    const tempLocaleMin = data.main.temp_min - 273.15;
+    return tempLocaleMin;
+}
+
+function getTemperatureMax(data){
+
+    const tempLocaleMax = data.main.temp_max - 273.15;
+    return tempLocaleMax;
+}
+
 
 
 weatherAPI();
